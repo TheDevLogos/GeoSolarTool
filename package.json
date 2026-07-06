@@ -1,0 +1,19 @@
+{
+  "name": "geosolartool",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static-first geospatial photovoltaic analysis tool.",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "solar",
+    "photovoltaic",
+    "geospatial",
+    "leaflet",
+    "static-site",
+    "vercel"
+  ],
+  "license": "MIT"
+}
