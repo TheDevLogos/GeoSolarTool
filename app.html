@@ -1844,7 +1844,16 @@ function GeoSolarPlatform() {
   }, /*#__PURE__*/React.createElement(Icon, {
     name: theme === 'light' ? 'Moon' : 'Sun',
     size: 18
-  })), /*#__PURE__*/React.createElement("button", {
+ })), /*#__PURE__*/React.createElement("a", {
+    href: "CRM.html",
+    id: "openCrmButton",
+    title: "Abrir administraci\xF3n del negocio",
+    className: "flex items-center px-4 py-2 bg-white hover:bg-teal-50 text-teal-700 border border-teal-300 text-sm font-medium rounded shadow-sm transition-colors"
+  }, /*#__PURE__*/React.createElement(Icon, {
+    name: "BriefcaseBusiness",
+    size: 16,
+    className: "mr-2"
+  }), " CRM / Negocio"), /*#__PURE__*/React.createElement("button", {
     onClick: function onClick() {
       setReportError('');
       return setShowReportModal(true);
