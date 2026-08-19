@@ -744,7 +744,7 @@
             <div class="cfe-contract-footer">La presente hoja de firmas forma parte del Contrato de Interconexión celebrado entre CFE Empresa Pública del Estado y ${esc(applicant)}, en ${esc(record.signingCity||'')}, a ${esc(date.day||'')} de ${esc(date.month||'')} de ${esc(date.year||'')}, que consta de 5 fojas incluida ésta.</div>
           </section>`
         ];
-        const warning=Number(record.installedCapacityKw||0)>=500?'<div class="cfe-contract-warning">ADVERTENCIA: el modelo corresponde a centrales eléctricas con capacidad menor a 0.5 MW. Revise la aplicabilidad antes de presentarlo.</div>':'';
+        const warning=Number(record.installedCapacityKw||0)>=500?'<div class="cfe-contract-warning"></div>':'';
         $('#cfe-print').innerHTML=warning+pages.join('');
         $('#cfe-print').setAttribute('aria-hidden','false');
         document.title=`Contrato de Interconexión · ${applicant}`;
